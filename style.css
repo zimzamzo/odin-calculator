@@ -1,12 +1,14 @@
 .calculator-container,
-.buttons-container {
+.buttons-container,
+.buttons-row-container {
     display: flex;
 }
 
 .calculator-container{
     flex-direction: column;
     max-width: 350px;
-    height: 350px;
+    padding: 10px;
+    gap: 10px;
 }
 
 .display {
@@ -14,9 +16,11 @@
     border-color: black;
     border-radius: 10px;
     border-width: 2px;
-    margin: 10px;
-    /* flex: 1 0 auto; */
-    min-height: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 48px;
+    text-align: right;
+    padding-right: 10px;
 }
 
 .buttons-container {
@@ -25,13 +29,13 @@
 }
 
 .buttons-row-container {
-    /* flex: 1 0 auto; */
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 button {
-    /* height: 20px;
-    width: 10px;
-    margin: 10px; */
-    /* flex: 1 0 auto; */
+    flex: 1;
+    margin: 10px;
+    height: 60px;
+    font-weight: 900;
+    font-size: 36px;
 }
